@@ -30,3 +30,13 @@ let speed = -150;
 let spawnTime = 1500;
 let gameStart = false;
 let game = new Phaser.Game(config);
+
+function preload() {
+  this.load.image("background", "Assets/Game Objects/background-day.png");
+  this.load.image("character1", "Assets/Game Objects/yellowbird-midflap.png");
+  this.load.image("character2", "Assets/Game Objects/yellowbird-downflap.png");
+  this.load.image("character3", "Assets/Game Objects/yellowbird-upflap.png");
+  this.load.image("pillar", "Assets/Game Objects/pipe-green.png");
+  this.load.image("base", "Assets/Game Objects/base.png");
+  this.load.image("gameover", "Assets/UI/gameover.png");
+}
